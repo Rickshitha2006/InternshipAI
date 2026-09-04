@@ -569,6 +569,10 @@ function parseDifyTextReport(text) {
 }
 
 function normalizeDifyResponse(raw) {
+  // TEMP DEBUG: check what Dify actually returned on the live site.
+  // Remove this console.log once results are confirmed working consistently.
+  console.log("FULL Dify response (live):", JSON.stringify(raw, null, 2));
+
   if (!raw || !raw.data) {
     throw new Error("Unexpected Dify response format");
   }
