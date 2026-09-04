@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INTERNSHIPAI – Smart Internship & Career Advisor</title>
+  <meta name="description" content="AI-powered internship eligibility, skill analysis, career recommendations, learning roadmap and project recommendations for students.">
+  <meta name="theme-color" content="#198754">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="INTERNSHIPAI – Smart Internship & Career Advisor">
+  <meta property="og:description" content="AI-powered internship eligibility, skill analysis, career recommendations, learning roadmap and project recommendations for students.">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top no-print">
+    <div class="container">
+      <a class="navbar-brand d-flex flex-column lh-1" href="#home">
+        <span class="brand-name"><i class="bi bi-mortarboard-fill text-success me-1"></i>INTERNSHIP<span class="text-success">AI</span></span>
+        <span class="brand-subtitle">Smart Internship &amp; Career Advisor</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+              aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#analyze">Analyze</a></li>
+          <li class="nav-item"><a class="nav-link" href="#how-it-works">How It Works</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item mt-2 mt-lg-0">
+            <a href="#analyze" class="btn btn-success rounded-pill px-3">Start Analysis</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <header id="home" class="hero-section no-print">
+    <div class="container py-5">
+      <div class="row align-items-center g-5 py-4">
+        <div class="col-lg-6">
+          <span class="badge bg-success-subtle text-success-emphasis rounded-pill px-3 py-2 mb-3 fw-semibold">
+            <i class="bi bi-stars me-1"></i> AI-Powered Career Guidance
+          </span>
+          <h1 class="display-4 fw-bold mb-3">Build Your Career With Confidence</h1>
+          <p class="lead text-muted mb-4">
+            AI-powered internship eligibility, skill analysis, learning roadmap and project recommendations for students.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#analyze" class="btn btn-success btn-lg rounded-pill px-4">
+              <i class="bi bi-graph-up-arrow me-1"></i> Analyze My Profile
+            </a>
+            <button type="button" id="heroDemoBtn" class="btn btn-outline-success btn-lg rounded-pill px-4">
+              <i class="bi bi-play-circle me-1"></i> Try Demo
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card hero-card border-0 shadow-lg rounded-4 p-4">
+            <div class="d-flex align-items-center mb-3">
+              <div class="hero-icon-circle me-3">
+                <i class="bi bi-cpu-fill"></i>
+              </div>
+              <div>
+                <h5 class="mb-0 fw-bold">AI Career Analysis</h5>
+                <small class="text-muted">Personalized in seconds</small>
+              </div>
+            </div>
+            <div class="row g-3 text-center">
+              <div class="col-6">
+                <div class="stat-box">
+                  <i class="bi bi-patch-check-fill fs-3 text-success"></i>
+                  <p class="mb-0 small fw-semibold mt-2">Eligibility Check</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat-box">
+                  <i class="bi bi-bar-chart-fill fs-3 text-success"></i>
+                  <p class="mb-0 small fw-semibold mt-2">Skill Match</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat-box">
+                  <i class="bi bi-map-fill fs-3 text-success"></i>
+                  <p class="mb-0 small fw-semibold mt-2">Learning Roadmap</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat-box">
+                  <i class="bi bi-lightbulb-fill fs-3 text-success"></i>
+                  <p class="mb-0 small fw-semibold mt-2">Project Suggestions</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== HOW IT WORKS ===================== -->
+  <section id="how-it-works" class="py-5 no-print">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">How It Works</h2>
+        <p class="text-muted">Three simple steps to your personalized career report</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-4 how-card">
+            <div class="how-number">1</div>
+            <i class="bi bi-person-lines-fill fs-1 text-success mb-3"></i>
+            <h5 class="fw-bold">Share Your Profile</h5>
+            <p class="text-muted mb-0 small">Enter your degree, CGPA, current skills and the internship you're targeting.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-4 how-card">
+            <div class="how-number">2</div>
+            <i class="bi bi-robot fs-1 text-success mb-3"></i>
+            <h5 class="fw-bold">AI Analyzes Your Fit</h5>
+            <p class="text-muted mb-0 small">Our engine checks eligibility, calculates skill match and identifies gaps.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-4 how-card">
+            <div class="how-number">3</div>
+            <i class="bi bi-graph-up fs-1 text-success mb-3"></i>
+            <h5 class="fw-bold">Get Your Roadmap</h5>
+            <p class="text-muted mb-0 small">Receive a learning roadmap, project ideas and a tailored career recommendation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ANALYSIS FORM ===================== -->
+  <section id="analyze" class="py-5 bg-section no-print">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Analyze Your Profile</h2>
+        <p class="text-muted">Enter your academic details and skills to receive a personalized internship and career recommendation.</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="card border-0 shadow rounded-4">
+            <div class="card-body p-4 p-md-5">
+
+              <div id="formAlertContainer"></div>
+
+              <form id="profileForm" novalidate>
+                <div class="row g-4">
+
+                  <div class="col-md-6">
+                    <label for="studentName" class="form-label fw-semibold">Student Name</label>
+                    <input type="text" class="form-control" id="studentName" placeholder="e.g. Anitha" required>
+                    <div class="invalid-feedback">Please enter your name.</div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="degree" class="form-label fw-semibold">Degree</label>
+                    <input type="text" class="form-control" id="degree" placeholder="e.g. BSc Computer Science" required>
+                    <div class="invalid-feedback">Please enter your degree.</div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="year" class="form-label fw-semibold">Year</label>
+                    <select class="form-select" id="year" required aria-label="Year of study">
+                      <option value="" selected disabled>Select year</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                    <div class="invalid-feedback">Please select your year (1-4).</div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="cgpa" class="form-label fw-semibold">CGPA</label>
+                    <input type="number" class="form-control" id="cgpa" placeholder="e.g. 8.2"
+                           min="0" max="10" step="0.1" required>
+                    <div class="invalid-feedback">Please enter a valid CGPA between 0 and 10.</div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="skills" class="form-label fw-semibold">Current Skills</label>
+                    <textarea class="form-control" id="skills" rows="2"
+                              placeholder="e.g. HTML, CSS, Bootstrap" required></textarea>
+                    <div class="form-text">Separate skills with commas.</div>
+                    <div class="invalid-feedback">Please list your current skills.</div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="experience" class="form-label fw-semibold">Experience</label>
+                    <select class="form-select" id="experience" required aria-label="Experience level">
+                      <option value="" selected disabled>Select experience</option>
+                      <option value="Fresher">Fresher</option>
+                      <option value="Internship Experience">Internship Experience</option>
+                      <option value="Project Experience">Project Experience</option>
+                      <option value="Work Experience">Work Experience</option>
+                    </select>
+                    <div class="invalid-feedback">Please select your experience level.</div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="requiredSkills" class="form-label fw-semibold">Required Internship Skills</label>
+                    <textarea class="form-control" id="requiredSkills" rows="2"
+                              placeholder="e.g. HTML, CSS, Bootstrap, JavaScript, AngularJS" required></textarea>
+                    <div class="invalid-feedback">Please list the required internship skills.</div>
+                  </div>
+
+                </div>
+
+                <hr class="my-4">
+
+                <div class="d-flex flex-wrap gap-3">
+                  <button type="submit" id="analyzeBtn" class="btn btn-success btn-lg rounded-pill px-4">
+                    <i class="bi bi-graph-up-arrow me-1"></i>
+                    <span class="btn-label">Analyze My Profile</span>
+                  </button>
+                  <button type="button" id="demoDataBtn" class="btn btn-secondary btn-lg rounded-pill px-4">
+                    <i class="bi bi-magic me-1"></i> Load Demo Data
+                  </button>
+                  <button type="button" id="clearFormBtn" class="btn btn-outline-success btn-lg rounded-pill px-4">
+                    <i class="bi bi-x-circle me-1"></i> Clear Form
+                  </button>
+                </div>
+              </form>
+
+              <!-- Loading state -->
+              <div id="loadingState" class="text-center py-5 d-none">
+                <div class="spinner-border text-success mb-3" role="status" style="width:3rem;height:3rem;">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <p id="loadingMessage" class="fw-semibold text-success mb-0">Analyzing your profile...</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RESULTS SECTION ===================== -->
+  <section id="results" class="py-5 d-none">
+    <div class="container">
+
+      <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 no-print">
+        <div>
+          <h2 class="fw-bold mb-1">Your Career Analysis</h2>
+          <span id="resultModeBadge" class="badge rounded-pill"></span>
+        </div>
+        <button id="printBtn" class="btn btn-outline-success rounded-pill px-4">
+          <i class="bi bi-printer-fill me-1"></i> Print / Save Report
+        </button>
+      </div>
+
+      <div id="printHeader" class="d-none print-only text-center mb-4">
+        <h2 class="fw-bold mb-0"><i class="bi bi-mortarboard-fill"></i> INTERNSHIPAI Career Report</h2>
+        <p class="text-muted mb-0">Smart Internship &amp; Career Advisor</p>
+      </div>
+
+      <!-- Summary cards -->
+      <div class="row g-4 mb-4">
+        <div class="col-6 col-lg-3">
+          <div class="card summary-card border-0 shadow-sm rounded-4 h-100 text-center p-3">
+            <i class="bi bi-patch-check-fill fs-2 text-success mb-2"></i>
+            <p class="text-muted small mb-1">Eligibility</p>
+            <h5 class="fw-bold mb-0" id="resEligibility">-</h5>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="card summary-card border-0 shadow-sm rounded-4 h-100 text-center p-3">
+            <i class="bi bi-bar-chart-fill fs-2 text-success mb-2"></i>
+            <p class="text-muted small mb-1">Skill Match</p>
+            <h5 class="fw-bold mb-0" id="resSkillMatch">-</h5>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="card summary-card border-0 shadow-sm rounded-4 h-100 text-center p-3">
+            <i class="bi bi-tags-fill fs-2 text-success mb-2"></i>
+            <p class="text-muted small mb-1">Category</p>
+            <h5 class="fw-bold mb-0" id="resCategory">-</h5>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="card summary-card border-0 shadow-sm rounded-4 h-100 text-center p-3">
+            <i class="bi bi-briefcase-fill fs-2 text-success mb-2"></i>
+            <p class="text-muted small mb-1">Recommended Role</p>
+            <h5 class="fw-bold mb-0 fs-6" id="resRole">-</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill match visual -->
+      <div class="card border-0 shadow-sm rounded-4 mb-4">
+        <div class="card-body p-4">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <h5 class="fw-bold mb-0"><i class="bi bi-speedometer2 me-2 text-success"></i>Skill Match</h5>
+            <span class="fw-bold text-success" id="resSkillMatchPercentLabel">0%</span>
+          </div>
+          <div class="progress mb-4" style="height: 1.25rem;" role="progressbar" aria-label="Skill match percentage"
+               aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+            <div id="skillProgressBar" class="progress-bar bg-success" style="width: 0%"></div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-6">
+              <h6 class="fw-semibold mb-2"><i class="bi bi-hand-thumbs-up-fill text-success me-1"></i> Matched Skills</h6>
+              <div id="strongSkillsContainer" class="d-flex flex-wrap gap-2"></div>
+            </div>
+            <div class="col-md-6">
+              <h6 class="fw-semibold mb-2"><i class="bi bi-arrow-up-circle-fill text-warning me-1"></i> Skills to Improve</h6>
+              <div id="improveSkillsContainer" class="d-flex flex-wrap gap-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Career recommendation -->
+      <div class="card border-0 shadow rounded-4 mb-4 career-card">
+        <div class="card-body p-4">
+          <h5 class="fw-bold mb-3"><i class="bi bi-lightbulb-fill text-success me-2"></i>AI Career Recommendation</h5>
+          <p class="mb-0 fs-6" id="resCareerRecommendation">-</p>
+        </div>
+      </div>
+
+      <!-- Learning roadmap -->
+      <div class="mb-4">
+        <h5 class="fw-bold mb-3"><i class="bi bi-map-fill text-success me-2"></i>Learning Roadmap</h5>
+        <div id="roadmapContainer" class="row g-4"></div>
+      </div>
+
+      <!-- Project recommendations -->
+      <div class="mb-4">
+        <h5 class="fw-bold mb-3"><i class="bi bi-kanban-fill text-success me-2"></i>Project Recommendations</h5>
+        <div id="projectsContainer" class="row g-4"></div>
+        <div class="card border-0 shadow-sm rounded-4 mt-4 best-project-card">
+          <div class="card-body p-4">
+            <span class="badge bg-success mb-2"><i class="bi bi-star-fill me-1"></i>Best Project to Build</span>
+            <h5 class="fw-bold" id="resBestProject">-</h5>
+            <p class="mb-0 text-muted" id="resBestProjectReason">-</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="py-5 bg-section no-print">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-3">About INTERNSHIPAI</h2>
+          <p class="text-muted">
+            INTERNSHIPAI is a smart career advisor built for students who want clarity on their internship
+            readiness. By combining academic details, current skills, and target internship requirements,
+            it generates a personalized report covering eligibility, skill match, a learning roadmap and
+            project recommendations to guide the next steps in your career journey.
+          </p>
+          <ul class="list-unstyled text-muted">
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Fast, structured career analysis</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Actionable 4-week learning roadmap</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Practical project recommendations</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="card border-0 shadow-sm rounded-4 p-4">
+            <h6 class="fw-bold mb-3"><i class="bi bi-info-circle-fill text-success me-2"></i>Demo Mode Notice</h6>
+            <p class="text-muted small mb-0">
+              This deployment runs in <strong>Demo Mode</strong> by default so it works instantly on GitHub Pages
+              with no backend required. Results shown in demo mode are illustrative sample data, not a live AI
+              analysis. See the README for how to connect a real Dify-powered backend.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer-section no-print">
+    <div class="container py-5">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5 class="fw-bold text-white mb-2"><i class="bi bi-mortarboard-fill me-1"></i>INTERNSHIPAI</h5>
+          <p class="text-white-50 small mb-1">Smart Internship &amp; Career Advisor</p>
+          <p class="text-white-50 small fst-italic">"Helping students become internship-ready."</p>
+        </div>
+        <div class="col-md-4">
+          <h6 class="fw-bold text-white mb-3">Quick Links</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#home" class="footer-link">Home</a></li>
+            <li class="mb-2"><a href="#analyze" class="footer-link">Analyze</a></li>
+            <li class="mb-2"><a href="#how-it-works" class="footer-link">How It Works</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6 class="fw-bold text-white mb-3">Contact</h6>
+          <p class="text-white-50 small mb-0">Built as an AI-powered career advisor demo application.</p>
+        </div>
+      </div>
+      <hr class="border-secondary my-4">
+      <p class="text-center text-white-50 small mb-0">&copy; 2026 INTERNSHIPAI. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

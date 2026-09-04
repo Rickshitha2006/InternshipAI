@@ -1,0 +1,276 @@
+/* =========================================================
+   INTERNSHIPAI - style.css
+   Theme: Green / White, clean professional AI dashboard look
+   ========================================================= */
+
+:root {
+  --ia-green: #198754;
+  --ia-green-dark: #146c43;
+  --ia-green-light: #e9f7ef;
+  --ia-bg: #f4f9f6;
+  --ia-text: #1e2a24;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+body {
+  background-color: var(--ia-bg);
+  color: var(--ia-text);
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* ---------- Navbar ---------- */
+.navbar-brand .brand-name {
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: var(--ia-text);
+}
+
+.navbar-brand .brand-subtitle {
+  font-size: 0.7rem;
+  color: #6c757d;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #495057;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--ia-green);
+}
+
+/* ---------- Hero ---------- */
+.hero-section {
+  background: linear-gradient(180deg, var(--ia-green-light) 0%, var(--ia-bg) 100%);
+}
+
+.hero-card {
+  background: #ffffff;
+}
+
+.hero-icon-circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--ia-green-light);
+  color: var(--ia-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.stat-box {
+  background: var(--ia-bg);
+  border-radius: 1rem;
+  padding: 1rem 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-3px);
+}
+
+/* ---------- How it works ---------- */
+.how-card {
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.how-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 1rem 2rem rgba(25, 135, 84, 0.12) !important;
+}
+
+.how-number {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--ia-green);
+  color: #fff;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- Sections ---------- */
+.bg-section {
+  background-color: #ffffff;
+}
+
+/* ---------- Buttons ---------- */
+.btn-success {
+  background-color: var(--ia-green);
+  border-color: var(--ia-green);
+}
+
+.btn-success:hover,
+.btn-success:focus {
+  background-color: var(--ia-green-dark);
+  border-color: var(--ia-green-dark);
+}
+
+.btn-outline-success {
+  color: var(--ia-green);
+  border-color: var(--ia-green);
+}
+
+.btn-outline-success:hover {
+  background-color: var(--ia-green);
+  color: #fff;
+}
+
+/* ---------- Summary / results cards ---------- */
+.summary-card {
+  background: #ffffff;
+  transition: transform 0.2s ease;
+}
+
+.summary-card:hover {
+  transform: translateY(-3px);
+}
+
+.career-card {
+  background: linear-gradient(135deg, var(--ia-green-light) 0%, #ffffff 100%);
+  border-left: 4px solid var(--ia-green);
+}
+
+.best-project-card {
+  background: var(--ia-green-light);
+  border-left: 4px solid var(--ia-green);
+}
+
+/* ---------- Roadmap ---------- */
+.roadmap-card {
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.06);
+  height: 100%;
+  transition: transform 0.2s ease;
+}
+
+.roadmap-card:hover {
+  transform: translateY(-4px);
+}
+
+.roadmap-week-badge {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--ia-green);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+/* ---------- Project cards ---------- */
+.project-card {
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.06);
+  height: 100%;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+}
+
+.project-card.best-pick {
+  border: 2px solid var(--ia-green);
+}
+
+/* ---------- Skill badges ---------- */
+.skill-badge-strong {
+  background-color: var(--ia-green-light);
+  color: var(--ia-green-dark);
+  font-weight: 600;
+  padding: 0.5em 0.9em;
+  border-radius: 50rem;
+  font-size: 0.85rem;
+}
+
+.skill-badge-improve {
+  background-color: #fff3cd;
+  color: #856404;
+  font-weight: 600;
+  padding: 0.5em 0.9em;
+  border-radius: 50rem;
+  font-size: 0.85rem;
+}
+
+/* ---------- Footer ---------- */
+.footer-section {
+  background-color: #14251c;
+}
+
+.footer-link {
+  color: rgba(255,255,255,0.65);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+}
+
+/* ---------- Utility ---------- */
+.print-only {
+  display: none;
+}
+
+/* Form focus ring in theme color */
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--ia-green);
+  box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.2);
+}
+
+/* ---------- Print styles ---------- */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  body {
+    background: #ffffff !important;
+  }
+
+  #results {
+    display: block !important;
+  }
+
+  .card {
+    box-shadow: none !important;
+    border: 1px solid #dee2e6 !important;
+  }
+
+  a[href]::after {
+    content: "";
+  }
+}
